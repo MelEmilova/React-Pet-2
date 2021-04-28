@@ -2,27 +2,27 @@
 
 function Register() {
   return (
-    <section class="register">
+    <section className="register">
       <form action="#" method="post">
         <fieldset>
           <legend>Register</legend>
-          <p class="field">
+          <p className="field">
             <label for="username">Username</label>
-            <span class="input">
+            <span className="input">
               <input type="text" name="username" id="username" placeholder="Username" />
-              <span class="actions"></span>
-              <i class="fas fa-user"></i>
+              <span className="actions"></span>
+              <i className="fas fa-user"></i>
             </span>
           </p>
-          <p class="field">
+          <p className="field">
             <label for="password">Password</label>
-            <span class="input">
+            <span className="input">
               <input type="password" name="password" id="password" placeholder="Password" />
-              <span class="actions"></span>
-              <i class="fas fa-key"></i>
+              <span className="actions"></span>
+              <i className="fas fa-key"></i>
             </span>
           </p>
-          <input class="button" type="submit" class="submit" value="Register" />
+          <input className="button submit" type="submit" value="Register" />
         </fieldset>
       </form>
     </section>

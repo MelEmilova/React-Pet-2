@@ -8,7 +8,7 @@ class HomeNav extends Component{
     return (
       <nav class="navbar">
         <ul>
-          <li><Link to="/all-pets">All</Link></li>
+          <li><Link to="/">All</Link></li>
           <li ><Link to="/Cat">Cats</Link></li>
           <li><Link to="/Dog">Dogs</Link></li>
           <li><Link to="/Parrot">Parrots</Link></li>

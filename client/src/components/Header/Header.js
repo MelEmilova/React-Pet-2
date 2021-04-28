@@ -8,7 +8,7 @@ function Header(){
           <div className="first-bar">
             <Link to="/">Dashboard</Link>
             <Link className="button" to="/my-pets">My Pets</Link>
-            <Link className="button" to="/create-pet">Add Pet</Link>
+            <Link className="button" to="/pets/create">Add Pet</Link>
           </div>
           <div className="second-bar">
             <ul>
@@ -28,4 +28,4 @@ function Header(){
   );
 };
 
-export default Header;
+export default Header; 

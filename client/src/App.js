@@ -7,6 +7,7 @@ import Login from './components/Login/Login';
 import CreatePet from './components/CreatePet/CreatePet';
 import Home from './components/Home/Home';
 import MyPets from './components/MyPets/MyPets';
+import DetailsPet from './components/DetailsPet/DetailsPet';
 
 
 function App() {
@@ -19,10 +20,11 @@ function App() {
         <Route path="/" exact component={Home}></Route>
         <Route path="/register" component={Register}></Route>
         <Route path="/login" component={Login}></Route>
-        <Route path="/create-pet" component={CreatePet}></Route>
+        <Route path="/pets/create" component={CreatePet}></Route>
         <Route path="/my-pets" component={MyPets}></Route>
 
         <Route path="/:category" component={Home} />
+        <Route path="/pets/details/:id" component={DetailsPet}></Route>
 
 
       </Switch>

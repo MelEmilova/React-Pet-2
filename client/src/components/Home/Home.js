@@ -35,12 +35,12 @@ class Home extends Component {
   render() {
     console.log();
     return (
-      <section class="dashboard">
+      <section className="dashboard">
         <h1>Dashboard</h1>
 
         <HomeNav></HomeNav>
 
-        <ul class="other-pets-list">
+        <ul className="other-pets-list">
 
           {this.state.pets.map(pet => <Pet pet={pet} key={pet.id}></Pet>)}
 

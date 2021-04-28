@@ -1,5 +1,5 @@
 {
-  "pets":[
+  "pets": [
     {
       "id": "5bb0888ee1d636567dc9f627",
       "name": "Yara",
@@ -104,6 +104,13 @@
         "lmt": "2018-09-30T10:35:01.294Z",
         "ect": "2018-09-30T08:41:43.490Z"
       }
+    },
+    {
+      "name": "Mel",
+      "description": "dsvklsdnvisdvskn/kls",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxL5QtpvnUtBaMKw7FN0k4wslIkPW50eGQnQ&usqp=CAU",
+      "category": "Dog",
+      "id": "SOTx0WW"
     }
   ]
 }

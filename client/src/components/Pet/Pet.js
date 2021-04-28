@@ -1,16 +1,17 @@
 import {Link} from 'react-router-dom';
 
-function Pet(props){
+const Pet = (props) => {
   return(
-    <li class="otherPet">
+    <li className="otherPet">
       <h3>Name: {props.pet.name}</h3>
-      <p>Category: {props.pet.category}</p>
-      <p class="img"><img src={props.pet.imageURL} alt=""/></p>
-      <p class="description">{props.pet.description}</p>
-      <div class="pet-info">
-        <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-        <Link to={`/details/${props.pet.id}`}><button class="button">Details</button></Link>
-        <i class="fas fa-heart"></i> <span> 2</span>
+       <p>Category: {props.pet.category}</p>
+       <p className="img"><img src={props.pet.imageURL} alt=""/></p>
+      <p className="description">{props.pet.description}</p>
+       <div className="pet-info">
+         <Link to="/"><button className="button"><i className="fas fa-heart"></i> Pet</button></Link>
+         
+        <Link to={`/pets/details/${props.pet.id}`}><button className="button">Details</button></Link>
+        <i className="fas fa-heart"></i> <span> 2</span>
       </div>
     </li>
   );
