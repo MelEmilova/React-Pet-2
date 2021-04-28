@@ -8,6 +8,7 @@ import CreatePet from './components/CreatePet/CreatePet';
 import Home from './components/Home/Home';
 import MyPets from './components/MyPets/MyPets';
 import DetailsPet from './components/DetailsPet/DetailsPet';
+import EditPet from './components/EditPet/EditPet';
 
 
 function App() {
@@ -18,13 +19,16 @@ function App() {
 
       <Switch>
         <Route path="/" exact component={Home}></Route>
+        <Route path="/pets/details/:petId" exact  component={DetailsPet}></Route>
+        <Route path="/pets/details/:petId/edit" component={EditPet}></Route>
+
+        <Route path="/pets/create" component={CreatePet}></Route>
+
+
         <Route path="/register" component={Register}></Route>
         <Route path="/login" component={Login}></Route>
-        <Route path="/pets/create" component={CreatePet}></Route>
         <Route path="/my-pets" component={MyPets}></Route>
-
         <Route path="/:category" component={Home} />
-        <Route path="/pets/details/:id" component={DetailsPet}></Route>
 
 
       </Switch>
