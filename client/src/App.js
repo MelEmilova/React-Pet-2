@@ -34,7 +34,7 @@ function App() {
       <Footer></Footer>
 
 
-      <style jsx>{`
+      <style jsx="true">{`
         body {
    padding: 0;
    margin: 0;

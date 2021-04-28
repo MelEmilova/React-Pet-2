@@ -7,7 +7,7 @@ function Login() {
         <fieldset>
           <legend>Login</legend>
           <p className="field">
-            <label for="username">Username</label>
+            <label htmlFor="username">Username</label>
             <span className="input">
               <input type="text" name="username" id="username" placeholder="Username" />
               <span className="actions"></span>
@@ -15,7 +15,7 @@ function Login() {
             </span>
           </p>
           <p className="field">
-            <label for="password">Password</label>
+            <label htmlFor="password">Password</label>
             <span className="input">
               <input type="password" name="password" id="password" placeholder="Password" />
               <span className="actions"></span>

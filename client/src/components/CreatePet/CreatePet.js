@@ -1,13 +1,19 @@
 import { createPet } from '../../servises/petServisec';
 
-function CreatePet() {
+function CreatePet({ history}) {
+
 
   const onCreatePetSubmitHandler = (e) => {
     e.preventDefault();
     let { name, description, imageURL, category } = e.target;
+    if (name.value === "" || description.value===""|| imageURL.value === ""){
+      let errorMess = document.getElementById('errorBox')
+     return errorMess.style.display = 'block'
+    };
     createPet(name.value, description.value, imageURL.value, category.value)
-      .then(data => console.log(data));
+      .then(() => history.push('/'));
   };
+
 
   return (
     <section className="create">
@@ -15,6 +21,11 @@ function CreatePet() {
         <fieldset>
           <legend>Add new Pet</legend>
           <p className="field">
+
+            <div id="errorBox" className="notification">
+              <span>All fealds are required!</span>
+            </div>
+
             <label htmlFor="name">Name</label>
             <span className="input">
               <input type="text" name="name" id="name" placeholder="Name" />

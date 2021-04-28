@@ -6,7 +6,7 @@ class HomeNav extends Component{
 
   render() {
     return (
-      <nav class="navbar">
+      <nav className="navbar">
         <ul>
           <li><Link to="/">All</Link></li>
           <li ><Link to="/Cat">Cats</Link></li>
