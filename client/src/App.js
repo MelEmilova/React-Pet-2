@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import MyPets from './components/MyPets/MyPets';
 import DetailsPet from './components/DetailsPet/DetailsPet';
 import EditPet from './components/EditPet/EditPet';
+import DemoFunck from './components/DemoFunck/DemoFunc';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
       <Switch>
         <Route path="/" exact component={Home}></Route>
+        <Route path="/demo" exact component={DemoFunck}></Route>
         <Route path="/pets/details/:petId" exact  component={DetailsPet}></Route>
         <Route path="/pets/details/:petId/edit" component={EditPet}></Route>
 
@@ -29,6 +31,8 @@ function App() {
         <Route path="/login" component={Login}></Route>
         <Route path="/my-pets" component={MyPets}></Route>
         <Route path="/:category" component={Home} />
+
+     
 
 
       </Switch>

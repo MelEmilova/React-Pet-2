@@ -534,3 +534,10 @@ blockquote {
 #errorBox>span {
   background: #F50;
 }
+
+.containerDemo {
+  display: inline-block;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}

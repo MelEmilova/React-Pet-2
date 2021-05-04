@@ -16,7 +16,7 @@ function EditPet(props) {
 
   function onDescriptionEditSave(e) {
     e.preventDefault();
-    editPet(pet.name, e.target.description.value, pet.imageURL, pet.category, pet.id)
+    editPet(pet.name, e.target.description.value, pet.imageURL, pet.category,pet.likes, pet.id)
       .then(res => {
         props.history.push('/');
       });

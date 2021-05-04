@@ -10,6 +10,9 @@ function Header(){
             <Link className="button" to="/my-pets">My Pets</Link>
             <Link className="button" to="/pets/create">Add Pet</Link>
           </div>
+          <div>
+            <Link className="button" to="/demo">Demo Funck</Link>
+          </div>
           <div className="second-bar">
             <ul>
               <li>Welcome, Mel!</li>
